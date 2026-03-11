@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "lin"
+    "lint:fix": "eslint --fix"
   },
   "dependencies": {
     "next": "16.1.6",
