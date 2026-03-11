@@ -20,7 +20,7 @@ export default function ReadPage() {
 	const [wpm, setWpm] = useState(300);
 	const [done, setDone] = useState(false);
 	const [showControls, setShowControls] = useState(true);
-	const hideTimer = useRef<ReturnType<typeof setTimeout>>();
+	const hideTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
 	useEffect(() => {
 		const text = sessionStorage.getItem("spreed-text") || "";
